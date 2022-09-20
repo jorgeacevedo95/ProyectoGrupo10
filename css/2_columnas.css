@@ -1,0 +1,14 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+.contenido {
+    margin: 30px;
+}
+
+.caja{
+    display:table-cell ;
+    padding: 30px;
+}
+
