@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <title>Registar Empleado</title>
+    <title>Actualizar empleado</title>
     <script src="js/validarformulario.js"></script>
-    
     <style>
         body{
+            
             background: #B8E1ED;
         }
     </style>
@@ -22,23 +22,45 @@
                     <a href="index.html"><button type="submit" class="btn btn-info btn-lg">Salir</button></a>
                 </div>
             </div>
+
             <div class="row">
                 <div class="d-flex justify-content-lg-center">
                     <h2>Gestion de Empleados</h2>
-                </div>
-                
+                </div>                
             </div>
+            
             <div class="col">
                 <div class="d-flex justify-content-lg-center">
-                    <button type="submit" class="btn btn-info btn-lg">Registrar Empleado</button>
-                    <a href="AdminActualizarEmpleado.html"><button type="submit" class="btn btn-light btn-lg">Actualizar Empleado</button></a>
-                    <a href="AdminEliminarEmpleado.html"><button type="submit" class="btn btn-light btn-lg">Eliminar Empleado</button></a>
-                </div>
-
+                    <a href="AdminRegistrarEmpleado.html"><button type="submit" class="btn btn-light btn-lg">Registrar empleado</button></a>
+                    <button type="submit" class="btn btn-info btn-lg">Actualizar empleado</button>
+                    <a href="AdminEliminarEmpleado.html"><button type="submit" class="btn btn-light btn-lg">Eliminar empleado</button></a>
+                </div>                
             </div>
+            <br>
+            
+            <form action="" method="get" name="formBuscar" onsubmit="validar_identificacion();"  >
+                <div class="row">
+                    <div class="col"> 
+                        <div class="d-flex justify-content-end">
+                            
+                        </div> 
+                    </div>
 
+                    <div class="col">
+                        <label for="Cedula"><h4>Identificacion de empleado</h4></label>
+                        <input type="text" class="form-control" id="Cedula" placeholder="Cedula">
+                    </div>
+
+                    <div class="col">
+                        <button type="submit"> <img src="img/lupa.png"  height ="30" width="30" /></button>                  
+                    </div>
+                </div>                
+                
+            </form>   
+            
+        
             <div class="row m-lg-3">
-                <form class="row" name="formRegistro" >
+                <form class="row" name="formRegistro"  >
 
                     <div class="row m-lg-3">
                         <div class="col text-xl-end"><input type="text" placeholder="Identificación"> </div>
@@ -74,26 +96,27 @@
 
                 </form>        
             </div>
-            <div class="col d-flex justify-content-lg-center">
-                <input type="checkbox" id="TDD"><label>Tratamiento de Datos Personales</label>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex justify-content-lg-center">
-                        <input type="button" value="Guardar"  class="btn btn-info btn-lg" onclick="validar_TDD_registrar()">
-                        <button type="submit" class="btn btn-light btn-lg">Cancelar</button>
+
+
+            <form action="" method="get" name="formCheck" >
+                <div class="col d-flex justify-content-lg-center">
+                    <input type="checkbox" id="TDD" name="TDD" value="off"><label>Tratamiento de Datos Personales</label>
+                </div>
+               
+            <br>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-lg-center">
+                            <input type="button" value="Actualizar" class="btn btn-info btn-lg" onclick="validar_TDD()">
+                            <button type="submit" class="btn btn-light btn-lg">Cancelar</button>
+                        </div>
                     </div>
                 </div>
-
-
-            </div>
+            </form> 
         </div>
 
 
     </div>
     
-
-
-    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
