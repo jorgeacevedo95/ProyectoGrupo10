@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/alineacion-eleme.css" />
+    <title>Registar Empleado</title>
+    <style>
+        body{
+            background: #B8E1ED;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="col">
+            <div class="row p-5">
+                <div class="row">
+                    <h1>Gestion de Administradores y Empleados</h1>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-info btn-lg">Salir</button>
+                </div>
+            </div>
+            
+            <div>
+                <button style="position: absolute; top: 200px; left: 400px;" type="submit" class="btn btn-info btn-lg">Registrar</button>
+            </div>
+            <div class="center" >
+                <button style="position: absolute; top: 200px; left: 700px;" type="submit" class="btn btn-light btn-lg">Actualizar</button>
+            </div>
+                
+            <div class="right">
+                <button style="position: absolute; top: 200px; left: 1000px;" type="submit" class="btn btn-light btn-lg">Eliminar</button>
+                </div>
+                
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+        </div>
+
+
+    </div>
+    
+     
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <div style="margin:50px; position: absolute; top: 250px">
+        <input type="radio" id = "" name="ADMINISTRADOR" >
+        <label>ADMINISTRADOR</label><br>
+        <input type="radio" id = "" name="EMPLEADO" >
+        <label>EMPLEADO</label><br>
+        <input type="radio" id = "" name="SUPER ADMINISTRADOR" >
+        <label>SUPER ADMINISTRADOR</label>
+    
+    </div>
+         
+    <div class="container">
+    <form style="position: absolute; top: 400px; margin: 50px;"class="row g-3 "method="get"  name="formRegistro" onSubmit="return validar_formulario()"><!--return para que no se refresque--->
+
+
+        
+        <div class="col-6">
+            <input type="text" id="identificacion" class="form-control" name="identificacion" maxlength="50"  placeholder="Identificacion" >
+        </div>
+        
+        <div class="col-6">
+            <input type="text" class="form-control" id="fecha de ingreso" name="Fecha de ingreso" maxlength="50"  placeholder="Fecha de ingreso" >
+        </div>
+        
+
+        <div class="col-6"> 
+            <input type="text" id="nombre" class="form-control" name="nombre" maxlength="50"  placeholder="Nombre">
+        </div>
+
+        <div class="col-6"> 
+            <input type="text" class="form-control" id="Tipo de contrato"name="Tipo de contrato" maxlength="50"  placeholder="Tipo de contrato"></p>
+        </div>
+
+        <div class="col-6">
+            <input type="text" id="apellido" class="form-control" name="apellido" maxlength="50" placeholder="Apellido">
+        </div>
+
+        <div class="col-6">
+            <input type="text" class="form-control" id="Cargo" name="Cargo" maxlength="50" placeholder="Cargo">
+        </div>
+
+
+        <div class="col-6">
+            <input type="text" id="telefono" class="form-control" name="telefono" maxlength="50" placeholder="Telefono">
+        </div>
+
+        <div class="col-6">
+            <input type="text" class="form-control" id="Dependencia" name="Dependencia" maxlength="50" placeholder="Dependencia">
+        </div>
+
+
+       <div class="col-6">
+        <input type="text" id="direccion" class="form-control" name="direccion" maxlength="50" placeholder="Direccion">
+       </div>
+
+       <div class="col-6">
+        <input type="text"  class="form-control" id="salario" name="salario" maxlength="50" placeholder="Salario">
+    </div>
+        
+    <div class="col-6">
+        <input type="text" class="form-control" id="Fecha Terminacion Contrato" name="Fecha Terminacion Contrato" maxlength="50" placeholder="Fecha Terminacion Contrato">
+    </div>
+        
+        
+    </div>
+        
+ 
+
+</form>
+
+<div style= "position: absolute;top: 800px;left: 600px;" >
+<p><input type="checkbox"  name="condiciones"> Tratamiento de Datos</p>
+</div>
+ 
+
+    <div style= "position: absolute;top: 800px;left: 1100px;"  >
+        <button type="submit" value= "guardar" class="btn btn-info btn-lg" name="guardar">GUARDAR</button>
+       <button type="submit" value= "cancelar" class="btn btn-info btn-lg" name="guardar">CANCELAR</button>
+    </div>
+       
+   
+       
+       
+</body>
+</html>
