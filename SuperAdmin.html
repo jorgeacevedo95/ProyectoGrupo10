@@ -19,23 +19,25 @@
         <div class="col">
             <div class="row p-5">
                 <div class="row">
-                    <h1>Gestion de Administradores y Empleados</h1>
+                    
                 </div>
                 <div class="d-flex justify-content-end">
                     <button type="submit" class="btn btn-info btn-lg">Salir</button>
                 </div>
             </div>
+            <div class="d-flex justify-content-lg-center">
+                <h1>Gestion de Administradores y Empleados</h1>
+            </div>
             
-            <div>
-                <button style="position: absolute; top: 200px; left: 400px;" type="submit" class="btn btn-info btn-lg">Registrar</button>
-            </div>
-            <div class="center" >
-                <button style="position: absolute; top: 200px; left: 700px;" type="submit" class="btn btn-light btn-lg">Actualizar</button>
-            </div>
-                
-            <div class="right">
-                <button style="position: absolute; top: 200px; left: 1000px;" type="submit" class="btn btn-light btn-lg">Eliminar</button>
+            
+            <div class="col">
+                <div class="d-flex justify-content-lg-center">
+                    <button type="submit" class="btn btn-info btn-lg">Registrar Empleado</button>
+                    <button type="submit" class="btn btn-light btn-lg">Actualizar Empleado</button>
+                    <button type="submit" class="btn btn-light btn-lg">Eliminar Empleado</button>
                 </div>
+
+            </div>
                 
             </div>
             <div class="row"></div>
@@ -60,65 +62,43 @@
     
     </div>
          
-    <div class="container">
-    <form style="position: absolute; top: 400px; margin: 50px;"class="row g-3 "method="get"  name="formRegistro" onSubmit="return validar_formulario()"><!--return para que no se refresque--->
+    <div class="row m-lg-3">
+        <form class="row" >
 
+            <div class="row m-lg-3">
+                <div class="col text-xl-end"><input type="text" placeholder="Identificación"> </div>
+                <div class="col text-xl-end" ><h6>Fecha de Ingreso</h6></div>
+                <div class="col"><input type="date"></div>
+            </div>
+            <div class="row m-lg-3">
+                <div class="col text-xl-end"><input type="text" placeholder="Nombre"> </div>
+                <div class="col text-xl-end" ><h6>Tipo de Contrato</h6></div>
+                <div class="col"><input type="text"></div>
+            </div>
+            <div class="row m-lg-3">
+                <div class="col text-xl-end"><input type="text" placeholder="Apellido"> </div>
+                <div class="col text-xl-end" ><h6>Fecha de Terminacion Contrato</h6></div>
+                <div class="col"><input type="date"></div>
+            </div>
+            <div class="row m-lg-3">
+                <div class="col text-xl-end"><input type="text" placeholder="Telefono"> </div>
+                <div class="col text-xl-end" ><h6>Cargo</h6></div>
+                <div class="col"><input type="text"></div>
+            </div>
+            <div class="row m-lg-3">
+                <div class="col text-xl-end"><input type="text" placeholder="Direccion"> </div>
+                <div class="col text-xl-end" ><h6>Dependencia</h6></div>
+                <div class="col"><input type="text"></div>
+            </div>
+            <div class="row m-lg-3">
+                <div class="col text-xl-end"> </div>
+                <div class="col text-xl-end" ><h6>Salario</h6></div>
+                <div class="col"><input type="text" placeholder="Salario"></div>
+            </div>
+            
 
-        
-        <div class="col-6">
-            <input type="text" id="identificacion" class="form-control" name="identificacion" maxlength="50"  placeholder="Identificacion" >
-        </div>
-        
-        <div class="col-6">
-            <input type="text" class="form-control" id="fecha de ingreso" name="Fecha de ingreso" maxlength="50"  placeholder="Fecha de ingreso" >
-        </div>
-        
-
-        <div class="col-6"> 
-            <input type="text" id="nombre" class="form-control" name="nombre" maxlength="50"  placeholder="Nombre">
-        </div>
-
-        <div class="col-6"> 
-            <input type="text" class="form-control" id="Tipo de contrato"name="Tipo de contrato" maxlength="50"  placeholder="Tipo de contrato"></p>
-        </div>
-
-        <div class="col-6">
-            <input type="text" id="apellido" class="form-control" name="apellido" maxlength="50" placeholder="Apellido">
-        </div>
-
-        <div class="col-6">
-            <input type="text" class="form-control" id="Cargo" name="Cargo" maxlength="50" placeholder="Cargo">
-        </div>
-
-
-        <div class="col-6">
-            <input type="text" id="telefono" class="form-control" name="telefono" maxlength="50" placeholder="Telefono">
-        </div>
-
-        <div class="col-6">
-            <input type="text" class="form-control" id="Dependencia" name="Dependencia" maxlength="50" placeholder="Dependencia">
-        </div>
-
-
-       <div class="col-6">
-        <input type="text" id="direccion" class="form-control" name="direccion" maxlength="50" placeholder="Direccion">
-       </div>
-
-       <div class="col-6">
-        <input type="text"  class="form-control" id="salario" name="salario" maxlength="50" placeholder="Salario">
-    </div>
-        
-    <div class="col-6">
-        <input type="text" class="form-control" id="Fecha Terminacion Contrato" name="Fecha Terminacion Contrato" maxlength="50" placeholder="Fecha Terminacion Contrato">
-    </div>
-        
-        
-    </div>
-        
- 
-
-</form>
-
+        </form> 
+</div>
 <div style= "position: absolute;top: 800px;left: 600px;" >
 <p><input type="checkbox"  name="condiciones"> Tratamiento de Datos</p>
 </div>
