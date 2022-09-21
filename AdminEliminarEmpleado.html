@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <title>Registar Empleado</title>
+    <script src="js/validarformulario.js"></script>
+    <title>Eliminar Empleado</title>
+    
     <style>
         body{
             background: #B8E1ED;
@@ -17,7 +19,7 @@
         <div class="col">
             <div class="row p-5">
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-info btn-lg">Salir</button>
+                    <a href="index.html"><button type="submit" class="btn btn-info btn-lg">Salir</button></a>
                 </div>
             </div>
             <div class="row">
@@ -28,31 +30,34 @@
             
             <div class="col">
                 <div class="d-flex justify-content-lg-center">
-                    <button type="submit" class="btn btn-light btn-lg">Registrar Empleado</button>
-                    <button type="submit" class="btn btn-light btn-lg">Actualizar Empleado</button>
+                    <a href="AdminRegistrarEmpleado.html"><button type="submit" class="btn btn-light btn-lg">Registrar Empleado</button></a>
+                    <a href="AdminActualizarEmpleado.html"><button type="submit" class="btn btn-light btn-lg">Actualizar Empleado</button></a>
                     <button type="submit" class="btn btn-info btn-lg">Eliminar Empleado</button>
                 </div>                
             </div>
             <br>
-            <div class="row">
-                <div class="col"> 
-                    <div class="d-flex justify-content-end">
-                        <h4>Identificacion de empleado</h4>
-                    </div> 
-                                            
-                                                    
+
+            <form action="" method="get" name="formBuscar" onsubmit="validar_identificacion();"  >
+                <div class="row">
+                    <div class="col"> 
+                        <div class="d-flex justify-content-end">
+                            
+                        </div> 
+                    </div>
+
+                    <div class="col">
+                        <label for="Cedula"><h4>Identificacion de empleado</h4></label>
+                        <input type="text" class="form-control" id="Cedula" placeholder="Cedula">
+                    </div>
+
+                    <div class="col">
+                        <button type="submit"> <img src="img/lupa.png"  height ="30" width="30" /></button>                  
+                    </div>
                 </div>
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Cedula">
-                </div>
-                <div class="col">
-                    <button type="button"> <img src="img/lupa.png"  height ="30" width="30" /></button>                  
-                </div>
-            </div>
-            
+            </form>
 
             <div class="row m-lg-3">
-                <form class="row" >
+                <form class="row" name="formRegistro" >
 
                     <div class="row m-lg-3">
                         <div class="col text-xl-end"><input type="text" placeholder="Identificación"> </div>
@@ -89,13 +94,13 @@
                 </form>        
             </div>
             <div class="col d-flex justify-content-lg-center">
-                <input type="checkbox"><label>Tratamiento de Datos Personales</label>
+                <input type="checkbox" id="TDD" name="TDD"><label>Tratamiento de Datos Personales</label>
             </div>
             <br>
             <div class="row">
                 <div class="col">
                     <div class="d-flex justify-content-lg-center">
-                        <button type="submit" class="btn btn-info btn-lg">Eliminar</button>
+                        <input type="button" value="Eliminar" class="btn btn-info btn-lg" onclick="validar_TDD2()">
                         <button type="submit" class="btn btn-light btn-lg">Cancelar</button>
                     </div>
                 </div>
